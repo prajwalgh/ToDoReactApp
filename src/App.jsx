@@ -21,15 +21,20 @@ const deleteTodo=(text)=>{
   setTodos(newTodos)
 }
   return (
-    <div style={{textAlign: "center"}}>
-      <div><p>TO DO APP</p></div>
+    <div className='wrapper' >
+      
+      <div><p> 📋 TO DO APP</p></div>
       <div>
       {todos?.length>0 ?(
         <ul className='todo-list-ul'>
         {todos.map((todo,index)=>(
-          <div className='todo-item'>
-            <li key={index}>{todo}</li>
-            <button onClick={()=>{deleteTodo(todo);}}className='delete-button'>Delete</button>
+          <div className='todo-item-mainclass'>
+          <div className='todo-item1'>
+            <li  key={index}>{todo}
+            <button  onClick={()=>{deleteTodo(todo);}}className='delete-button'>Delete</button>
+            </li>
+          </div>
+          <div className='todo-item2'><li>data and time</li></div>
           </div>
         ))}
         </ul> ) : (

@@ -1,0 +1,52 @@
+body {
+         background-color: rgb(31, 25, 152);
+      }
+ svg{
+      position: absolute;
+   left: 0;
+   top: 0;
+ }     
+.wrapper{
+ position: relative;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 100px;
+  width: 50%;
+  border: 3px groove rgb(17, 17, 17);
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(175, 172, 229);
+    
+
+}
+ul{
+list-style-type:none;
+}
+.todo-item-mainclass{
+display: flex;
+}
+.todo-item1{
+    padding: 30px;
+  flex: 1;
+    border: 1px groove rgb(17, 17, 17);
+    border-radius: 25px;
+    height: 50px;
+   margin-bottom: 3em;
+  width: 50%;
+  background-color: rgb(240, 239, 255);
+    
+}
+.todo-item2{
+    padding: 30px;
+    border: 1px groove rgb(17, 17, 17);
+    border-radius: 25px;
+    height: 50px;
+   margin-bottom: 3em;
+  width: 25%;
+  background-color: rgb(240, 239, 255);
+    
+}
+
+.delete-button{
+      }
