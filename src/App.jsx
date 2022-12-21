@@ -1,9 +1,15 @@
 import React from 'react';
 import './App.css';
-import { useState } from "react";
+import  { useState, useEffect } from "react";
 
 function App() {
-  
+  const [message, setMessage] = useState("");
+    useEffect(() => {
+    fetch("http://localhost:8000/message")
+      .then((res) => res.json())
+      .then((data) => setMessage(data.message));
+  }, []);
+
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
   const addTodo = () => {
@@ -22,7 +28,7 @@ const deleteTodo=(text)=>{
 }
   return (
     <div className='wrapper' >
-      
+      <h1>{message}</h1>
       <div><p> 📋 TO DO APP</p></div>
       <div>
       {todos?.length>0 ?(
