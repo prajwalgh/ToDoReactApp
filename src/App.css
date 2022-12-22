@@ -25,6 +25,7 @@ list-style-type:none;
 }
 .todo-item-mainclass{
 display: flex;
+gap:20px;
 }
 .todo-item1{
     padding: 30px;
@@ -49,4 +50,5 @@ display: flex;
 }
 
 .delete-button{
+  border: none;
       }

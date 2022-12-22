@@ -1,42 +1,13 @@
 {
-    "name": "todo-list",
-    "version": "1.0.0",
-    "manifest_version": 2,
-    "description": "thing need to be done",
-    "icons": {
-        "512": "to-do-list.png"
-    },
-    "browser_action": {
-        "default_icon": "to-do-list.png",
-        "default_popup": "index.html"
-    }
-}
-
-
-
-/*{
-"short_name": "React App",
-"name": "Create React App Sample",
-"icons": [
-  {
-    "src": "",
-    "sizes": "64x64 32x32 24x24 16x16",
-    "type": "image/x-icon"
+  "name": "todo-list",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "thing need to be done",
+  "icons": {
+    "512": "to-do-list.png"
   },
-  {
-    "src": "",
-    "type": "image/png",
-    "sizes": "192x192"
-  },
-  {
-    "src": "",
-    "type": "image/png",
-    "sizes": "512x512"
+  "browser_action": {
+    "default_icon": "to-do-list.png",
+    "default_popup": "index.html"
   }
-],
-"start_url": ".",
-"display": "standalone",
-"theme_color": "#000000",
-"background_color": "#ffffff"
 }
-/*

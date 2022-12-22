@@ -37,10 +37,10 @@ const deleteTodo=(text)=>{
           <div className='todo-item-mainclass'>
           <div className='todo-item1'>
             <li  key={index}>{todo}
-            <button  onClick={()=>{deleteTodo(todo);}}className='delete-button'>Delete</button>
+            <button  onClick={()=>{deleteTodo(todo);}}className='delete-button'>🗑️</button>
             </li>
           </div>
-          <div className='todo-item2'><li>data and time</li></div>
+          {/* <div className='todo-item2'><li>data and time</li></div> */}
           </div>
         ))}
         </ul> ) : (
